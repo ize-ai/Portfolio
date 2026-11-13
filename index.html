@@ -2,97 +2,256 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aishah Isiaka | Front-End Developer</title>
+  <meta name="description" content="Aishah Isiaka is a front-end developer building responsive, accessible websites with HTML, CSS and JavaScript." />
+  <meta name="theme-color" content="#ffe3ee" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aishah Isiaka | Front-End Developer" />
+  <meta property="og:description" content="I build accessible, user-first websites with HTML, CSS and JavaScript." />
+  <meta property="og:url" content="https://isiakaaishahportfolio.netlify.app/" />
+  <meta property="og:image" content="https://isiakaaishahportfolio.netlify.app/images/og-image.png" />
+  <meta property="og:image:alt" content="Aishah Isiaka, Front-End Developer. I build accessible, user-first websites." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts: Fraunces (display), DM Sans (text), Caveat (handwritten notes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,600;0,800;1,600;1,800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Aishah Isiaka</h1>
-    <p>Beginner Front-End Developer | AI Task & Digital Work Experience</p>
-
-    <div class="buttons">
-      <a href="https://github.com/ize-ai" target="_blank">GitHub</a>
-      <a href="mailto:isiakaaishah@gmail.com">Contact</a>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="#top">aishah<span aria-hidden="true">✿</span></a>
+    <p class="status"><i aria-hidden="true"></i>Open to front-end roles</p>
   </header>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am an undergraduate with foundational experience in front-end development using HTML and CSS,
-      alongside practical exposure to AI platform task work involving audio review, labeling, and structured data tasks.
-      I am currently improving my skills in responsive design and JavaScript fundamentals while building experience
-      in digital communication, research, and content writing.
-    </p>
-  </section>
+  <nav class="dock" aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Hello</a>
+  </nav>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5 / CSS3</li>
-      <li>GitHub (Basic)</li>
-      <li>AI Task Work (Outlier: audio review, labeling, prompt tasks)</li>
-      <li>Copywriting & Writing</li>
-      <li>Research & Data Organization</li>
-      <li>Microsoft Office</li>
-    </ul>
-  </section>
+  <main id="main" tabindex="-1">
 
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
 
-    <div class="card">
-      <h3>YouTube Homepage Clone</h3>
-      <p>
-        Built a static replica of YouTube homepage using HTML and CSS.
-        Focused on layout structure and UI recreation.
-      </p>
+      <div class="hero-copy">
+        <p class="hand">hi, I’m Aishah ✿</p>
+        <h1 id="hero-title">
+          <span class="sr-only">I build friendly, accessible, colourful, user-first websites.</span>
+          <span aria-hidden="true">I build</span>
+          <span class="words" aria-hidden="true">
+            <span class="on">friendly</span><span>accessible</span><span>colourful</span><span>user-first</span>
+          </span>
+          <span aria-hidden="true">websites.</span>
+        </h1>
+        <p class="lede">Front-end developer building responsive, accessible interfaces with HTML, CSS and JavaScript.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#work">See my work</a>
+          <a class="btn" href="#contact">Say hello</a>
+        </div>
+      </div>
 
-      <a href="https://ize-ai.github.io/Youtube-Clone/" target="_blank">Live Demo</a>
+      <div class="badge" aria-hidden="true">
+        <div class="badge-spin">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+            <text><textPath href="#ring" textLength="486" lengthAdjust="spacing">OPEN TO FRONT-END ROLES ✿ LET’S BUILD SOMETHING ✿ </textPath></text>
+          </svg>
+        </div>
+        <span class="badge-core">✿</span>
+      </div>
 
-      <a href="https://github.com/ize-ai/Youtube-Clone" target="_blank">View Code</a>
+      <div class="stickers" aria-hidden="true">
+        <div class="sticker s1">HTML5</div>
+        <div class="sticker s2">CSS3</div>
+        <div class="sticker s3">JavaScript</div>
+        <div class="sticker s4">♥ accessibility</div>
+        <span class="hand hint">drag me around (double-click to reset)</span>
+      </div>
+    </section>
+
+    <!-- RIBBONS (decorative: the real skills list is in About) -->
+    <div class="ribbons" aria-hidden="true">
+      <div class="ribbon r1"><div class="track"><span>HTML5 ✿ CSS3 ✿ JavaScript ✿ Flexbox ✿ CSS Grid ✿ Responsive design ✿ </span></div></div>
+      <div class="ribbon r2"><div class="track"><span>Accessibility ✿ Semantic HTML ✿ Git &amp; GitHub ✿ Netlify ✿ Mobile-first ✿ </span></div></div>
     </div>
 
-    <div class="card">
-      <h3>Frontend Practice Components</h3>
-      <p>
-        Built multiple small UI components while learning CSS layout and responsiveness.
-      </p>
-    </div>
-  </section>
+    <!-- WORK: cards stack on top of each other as you scroll -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <p class="hand reveal">things I’ve made ↓</p>
+        <h2 class="title reveal" id="work-title">Selected work</h2>
 
-  <!-- EXPERIENCE -->
-  <section>
-    <h2>Experience</h2>
+        <article class="proj" style="--i:0; --c:#ffc2dc">
+          <div class="shot soon" aria-hidden="true"><b>PocketPath</b><span>screens coming soon</span></div>
+          <div class="proj-body">
+            <p class="hand">in progress</p>
+            <h3>PocketPath</h3>
+            <p>A budgeting web app for Nigerian students. Split your money across food, transport, airtime/data and school, then see what’s left in each one, in naira.</p>
+            <ul class="points">
+              <li>Designing a responsive, accessible interface with mobile-friendly forms</li>
+              <li>Planning balance and budget calculations with browser-based data storage and clear overspending indicators</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="soon-note">Live demo coming soon</p>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>AI Platform Work (Outlier)</h3>
-      <p>
-        Completed structured digital tasks including audio review, annotation, and prompt-based labeling tasks.
-        Followed strict task instructions to ensure accuracy and consistency.
-      </p>
-    </div>
+        <article class="proj" style="--i:1; --c:#ffd9c2">
+          <img class="shot" src="images/youtube-clone.webp" width="1200" height="558" loading="lazy"
+               alt="Screenshot of my YouTube homepage clone, showing a header with a search bar, a sidebar menu and a grid of video cards." />
+          <div class="proj-body">
+            <p class="hand">educational project</p>
+            <h3>YouTube Homepage Clone</h3>
+            <p>A front-end recreation of the YouTube homepage, built to practise turning a real interface into clean HTML and CSS. It’s clearly labelled as an educational project and isn’t affiliated with YouTube.</p>
+            <ul class="points">
+              <li>Responsive layout built with Flexbox and CSS Grid, using breakpoints to adapt from mobile to desktop</li>
+              <li>Header with search and icons, a sidebar menu and a grid of video cards</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>Flexbox</li><li>CSS Grid</li><li>Responsive</li></ul>
+            <div class="actions">
+              <a class="btn" href="https://aishahyoutube-clone.netlify.app" target="_blank" rel="noopener noreferrer">Live site<span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="btn" href="https://github.com/ize-ai/Youtube-Clone" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Leadership Roles</h3>
-      <p>
-        Held financial and administrative positions in student organizations, managing records,
-        budgeting, and coordination tasks.
-      </p>
-    </div>
-  </section>
+        <article class="proj" style="--i:2; --c:#e3d6ff">
+         <img class="shot" src="images/wildflower-landing.webp" width="1200" height="558" loading="lazy"
+               alt="Screenshot of my Wildflower Bakery landing page, showing a hero section with a large image of baked goods, a headline and a call-to-action button." />
+          <div class="proj-body">
+            <p class="hand">concept project</p>
+            <h3>Wildflower Bakery Landing Page</h3>
+            <p>A responsive landing page for a bakery concept, designed and built from scratch with semantic HTML5 and CSS3. A redesign is planned.</p>
+            <ul class="points">
+              <li>Layout built with CSS Grid and Flexbox</li>
+              <li>Adapts cleanly across mobile, tablet and desktop screens</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used"><li>HTML5</li><li>CSS3</li><li>CSS Grid</li><li>Flexbox</li></ul>
+            <div class="actions">
+              <a class="btn" href="https://wildflowerlandingpage.netlify.app" target="_blank" rel="noopener noreferrer">Live site<span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="btn" href="https://github.com/ize-ai/Wildflower-Landing-Page" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Isiaka Aishah | Built with HTML & CSS</p>
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="hand reveal">a little about me ✿</p>
+        <h2 class="title reveal" id="about-title">About</h2>
+
+        <div class="about-grid">
+          <div class="story reveal">
+            <p class="big">I came to tech looking for a skill I could build alongside nursing school. I tried a few different corners of it, and nothing really clicked until I found software development. Front-end is where it finally made sense.</p>
+            <p>I’m a very visual person. I love colour, layout, and the way small components come together into something that looks right and feels good to use. Front-end lets me do exactly that, and I get to see the result straight away. Building something and watching it come to life in the browser is my favourite part.</p>
+            <p>What matters most to me is building things that help people. A website or interface can help a business show what it sells, makes or does, and I want mine to be responsive and accessible, so they work well for everyone who visits.</p>
+          </div>
+
+          <div class="notes reveal">
+            <p class="note n1">based in Lagos, Nigeria</p>
+            <p class="note n2">learning React, Tailwind CSS &amp; TypeScript</p>
+            <p class="note n3">currently building PocketPath</p>
+          </div>
+        </div>
+
+        <h3 class="mini reveal">What I work with</h3>
+        <ul class="chips reveal" aria-label="Skills">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li><li>Responsive design</li><li>Flexbox</li><li>CSS Grid</li>
+          <li>Semantic HTML</li><li>Accessibility</li><li>Mobile-first</li><li>Git</li><li>GitHub</li><li>Netlify</li>
+          <li>VS Code</li><li>Cursor</li><li>AI-assisted development</li><li>AI output evaluation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JOURNEY (experience + education) -->
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="wrap">
+        <p class="hand reveal">where I’ve been ↓</p>
+        <h2 class="title reveal" id="journey-title">Journey</h2>
+
+        <ol class="tickets">
+          <li class="ticket reveal">
+            <p class="when"><time datetime="2025-07">Jul 2025</time> – <time datetime="2026-09">Sep 2026</time> · Remote</p>
+            <h3>AI Data Annotation Contributor</h3>
+            <p class="org">Outlier AI · Freelance</p>
+            <ul class="points">
+              <li>Evaluated AI-generated text and audio responses against detailed guidelines, flagging errors and inconsistencies</li>
+              <li>Kept accuracy and consistency across tasks while working independently to quality standards</li>
+            </ul>
+            <p class="take"><b>takeaway:</b> a habit of checking output carefully, which I bring to reviewing my own code.</p>
+          </li>
+
+          <li class="ticket reveal">
+            <p class="when"><time datetime="2024-05">May 2024</time> – <time datetime="2024-09">Sep 2024</time> · Lagos, Nigeria</p>
+            <h3>Head of Finance Team</h3>
+            <p class="org">Local Organizing Committee, 28th <abbr title="Nigerian Universities Nursing Students’ Association">NUNSA</abbr> National Convention</p>
+            <ul class="points">
+              <li>Led the finance team for Nigeria’s largest national convention of nursing students, with about 2,000 attendees</li>
+              <li>Managed a budget of about ₦10M, including financial records and all expenditure, across five months of planning</li>
+              <li>Coordinated with the organizing committee to plan, track and approve spending</li>
+            </ul>
+            <p class="take"><b>takeaway:</b> planning ahead, keeping accurate records and coordinating a team.</p>
+          </li>
+
+          <li class="ticket ticket-edu reveal">
+            <p class="when">Education</p>
+            <h3>Bachelor of Nursing Science (B.NSc.)</h3>
+            <p class="org">University of Lagos · <time datetime="2026-08">Aug 2026</time></p>
+            <p class="org"><b>Registered Nurse</b>, Nursing and Midwifery Council of Nigeria (NMCN)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="hand reveal">got a role or a project in mind?</p>
+        <h2 class="huge reveal" id="contact-title">Say hello<span aria-hidden="true">.</span></h2>
+        <p class="lede reveal">I’m looking for a front-end developer role. If you think I’d be a good fit, or you just want to say hello, send me a message.</p>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <a class="mail" href="mailto:isiakaaishah@gmail.com">isiakaaishah@gmail.com</a>
+            <ul class="chips social">
+              <li><a href="https://www.linkedin.com/in/aishah-isiaka" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+              <li><a href="https://github.com/ize-ai" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+
+          <form class="form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required /></div>
+            <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required /></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea></div>
+            <button class="btn btn-main" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aishah Isiaka · Built with HTML, CSS and JavaScript</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
-
 </body>
 </html>
