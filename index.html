@@ -8,7 +8,6 @@
   <meta name="theme-color" content="#ffe3ee" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
-  <!-- Link previews -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Aishah Isiaka | Front-End Developer" />
   <meta property="og:description" content="I build accessible, user-first websites with HTML, CSS and JavaScript." />
@@ -17,7 +16,6 @@
   <meta property="og:image:alt" content="Aishah Isiaka, Front-End Developer. I build accessible, user-first websites." />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Fonts: Fraunces (display), DM Sans (text), Caveat (handwritten notes) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,600;0,800;1,600;1,800&display=swap" rel="stylesheet" />
@@ -43,7 +41,6 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- HERO -->
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
 
@@ -83,19 +80,38 @@
       </div>
     </section>
 
-    <!-- RIBBONS (decorative: the real skills list is in About) -->
     <div class="ribbons" aria-hidden="true">
       <div class="ribbon r1"><div class="track"><span>HTML5 ✿ CSS3 ✿ JavaScript ✿ Flexbox ✿ CSS Grid ✿ Responsive design ✿ </span></div></div>
-      <div class="ribbon r2"><div class="track"><span>Accessibility ✿ Semantic HTML ✿ Git &amp; GitHub ✿ Netlify ✿ Mobile-first ✿ </span></div></div>
+      <div class="ribbon r2"><div class="track"><span>Accessibility ✿ Semantic HTML ✿ Git &amp; GitHub ✿ Netlify ✿ Vercel ✿ Mobile-first ✿ </span></div></div>
     </div>
 
-    <!-- WORK: cards stack on top of each other as you scroll -->
     <section class="work" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <p class="hand reveal">things I’ve made ↓</p>
         <h2 class="title reveal" id="work-title">Selected work</h2>
 
         <article class="proj" style="--i:0; --c:#ffc2dc">
+          <ul class="stats stats--card" aria-label="Convention website results">
+            <li class="stat"><b data-count="2000" data-suffix="+">2,000+</b><span>registrations</span></li>
+            <li class="stat"><b data-count="10000" data-suffix="+">10,000+</b><span>page views</span></li>
+            <li class="stat"><b data-count="30" data-suffix="%">30%</b><span>faster load time</span></li>
+            <li class="stat"><b data-count="13">13</b><span>people on the team</span></li>
+          </ul>
+          <div class="proj-body">
+            <p class="hand">live event site · 2024</p>
+            <h3>28th NUNSA National Convention Website</h3>
+            <p>The official website for Nigeria’s largest national convention of nursing students. I worked with a 13-member cross-functional team and owned the front-end build of the registration page.</p>
+            <ul class="points">
+              <li>Built semantic, responsive layouts for the homepage and registration flow (registration, schedule, payment)</li>
+              <li>Developed responsive dashboards with CSS media queries, across mobile, tablet and desktop</li>
+              <li>Added CSS animations and a custom colour system, and improved cross-browser compatibility and load time by 30%</li>
+              <li>Deployed on Vercel, with registrations beyond in-person attendance</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used"><li>HTML5</li><li>CSS3</li><li>Media queries</li><li>CSS animations</li><li>Vercel</li></ul>
+          </div>
+        </article>
+
+        <article class="proj" style="--i:1; --c:#ffd9c2">
           <div class="shot soon" aria-hidden="true"><b>PocketPath</b><span>screens coming soon</span></div>
           <div class="proj-body">
             <p class="hand">in progress</p>
@@ -110,7 +126,7 @@
           </div>
         </article>
 
-        <article class="proj" style="--i:1; --c:#ffd9c2">
+        <article class="proj" style="--i:2; --c:#e3d6ff">
           <img class="shot" src="images/youtube-clone.webp" width="1200" height="558" loading="lazy"
                alt="Screenshot of my YouTube homepage clone, showing a header with a search bar, a sidebar menu and a grid of video cards." />
           <div class="proj-body">
@@ -129,18 +145,18 @@
           </div>
         </article>
 
-        <article class="proj" style="--i:2; --c:#e3d6ff">
-         <img class="shot" src="images/wildflower-landing.webp" width="1200" height="558" loading="lazy"
-               alt="Screenshot of my Wildflower Bakery landing page, showing a hero section with a large image of baked goods, a headline and a call-to-action button." />
+        <article class="proj" style="--i:3; --c:#fff0a8">
+          <div class="shot soon" aria-hidden="true"><b>Wildflower</b><span>screenshot coming soon</span></div>
           <div class="proj-body">
-            <p class="hand">concept project</p>
-            <h3>Wildflower Bakery Landing Page</h3>
-            <p>A responsive landing page for a bakery concept, designed and built from scratch with semantic HTML5 and CSS3. A redesign is planned.</p>
+            <p class="hand">concept project · redesigned</p>
+            <h3>Wildflower Bakery Website</h3>
+            <p>A responsive, multi-section bakery website with an editorial-style layout, a product showcase, testimonials and a contact section. A practice concept, redesigned and rebuilt with JavaScript interactivity.</p>
             <ul class="points">
-              <li>Layout built with CSS Grid and Flexbox</li>
-              <li>Adapts cleanly across mobile, tablet and desktop screens</li>
+              <li>Built in JavaScript: product category filtering, a testimonial carousel and mobile navigation</li>
+              <li>CSS Grid and Flexbox layouts with custom typography, adapting to mobile, tablet and desktop</li>
+              <li>Deployed on Netlify</li>
             </ul>
-            <ul class="chips" aria-label="Technologies used"><li>HTML5</li><li>CSS3</li><li>CSS Grid</li><li>Flexbox</li></ul>
+            <ul class="chips" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>CSS Grid</li><li>Flexbox</li></ul>
             <div class="actions">
               <a class="btn" href="https://wildflowerlandingpage.netlify.app" target="_blank" rel="noopener noreferrer">Live site<span class="sr-only"> (opens in a new tab)</span></a>
               <a class="btn" href="https://github.com/ize-ai/Wildflower-Landing-Page" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> (opens in a new tab)</span></a>
@@ -150,7 +166,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="wrap">
         <p class="hand reveal">a little about me ✿</p>
@@ -165,21 +180,24 @@
 
           <div class="notes reveal">
             <p class="note n1">based in Lagos, Nigeria</p>
-            <p class="note n2">learning React, Tailwind CSS &amp; TypeScript</p>
+            <p class="note n2">learning React, Tailwind CSS &amp; TypeScript (beginner)</p>
             <p class="note n3">currently building PocketPath</p>
+            <p class="note n4">shipped a live event site: 2,000+ registrations</p>
           </div>
         </div>
 
         <h3 class="mini reveal">What I work with</h3>
         <ul class="chips reveal" aria-label="Skills">
-          <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li><li>Responsive design</li><li>Flexbox</li><li>CSS Grid</li>
-          <li>Semantic HTML</li><li>Accessibility</li><li>Mobile-first</li><li>Git</li><li>GitHub</li><li>Netlify</li>
-          <li>VS Code</li><li>Cursor</li><li>AI-assisted development</li><li>AI output evaluation</li>
+          <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li><li>Semantic HTML</li><li>Responsive design</li><li>Mobile-first</li>
+          <li>Flexbox</li><li>CSS Grid</li><li>Media queries</li><li>CSS animations</li><li>Accessibility</li><li>Cross-browser compatibility</li>
+          <li>Performance optimization</li><li>UI implementation</li><li>Cross-functional collaboration</li>
+          <li>Git</li><li>GitHub</li><li>Netlify</li><li>Vercel</li><li>VS Code</li><li>Cursor</li><li>Command line</li>
+          <li>AI-assisted development</li><li>AI output evaluation</li>
         </ul>
+        <p class="langs reveal"><b>Languages:</b> English (fluent), Nigerian Pidgin (fluent)</p>
       </div>
     </section>
 
-    <!-- JOURNEY (experience + education) -->
     <section class="journey" id="journey" aria-labelledby="journey-title">
       <div class="wrap">
         <p class="hand reveal">where I’ve been ↓</p>
@@ -191,35 +209,36 @@
             <h3>AI Data Annotation Contributor</h3>
             <p class="org">Outlier AI · Freelance</p>
             <ul class="points">
-              <li>Evaluated AI-generated text and audio responses against detailed guidelines, flagging errors and inconsistencies</li>
-              <li>Kept accuracy and consistency across tasks while working independently to quality standards</li>
+              <li>Wrote prompts that reverse-engineered web designs and motion animations from screenshots and screen recordings, building a trained eye for layout, UI patterns and design detail</li>
+              <li>Evaluated AI-generated audio, text and image outputs against detailed guidelines, flagging errors and inconsistencies while working independently to quality standards</li>
             </ul>
-            <p class="take"><b>takeaway:</b> a habit of checking output carefully, which I bring to reviewing my own code.</p>
+            <p class="take"><b>takeaway:</b> a trained eye for layout and detail, and a habit of checking output carefully, which I bring to reviewing my own code.</p>
           </li>
 
           <li class="ticket reveal">
             <p class="when"><time datetime="2024-05">May 2024</time> – <time datetime="2024-09">Sep 2024</time> · Lagos, Nigeria</p>
-            <h3>Head of Finance Team</h3>
+            <h3>Front-End Developer &amp; Head of Finance Team</h3>
             <p class="org">Local Organizing Committee, 28th <abbr title="Nigerian Universities Nursing Students’ Association">NUNSA</abbr> National Convention</p>
             <ul class="points">
-              <li>Led the finance team for Nigeria’s largest national convention of nursing students, with about 2,000 attendees</li>
-              <li>Managed a budget of about ₦10M, including financial records and all expenditure, across five months of planning</li>
-              <li>Coordinated with the organizing committee to plan, track and approve spending</li>
+              <li>Partnered with a multidisciplinary technical team to deliver the official convention website, owning the front-end build of the registration page</li>
+              <li>Built semantic, responsive layouts for the homepage and registration flow, supporting 2,000+ registrations and 10,000+ page views, deployed on Vercel</li>
+              <li>Developed responsive dashboards with CSS media queries, and added CSS animations and a custom colour system</li>
+              <li>Improved mobile responsiveness, cross-browser compatibility and site load time by 30%</li>
+              <li>Led the finance team, managing a budget of about ₦10M, financial records and expenditure across five months of planning</li>
             </ul>
-            <p class="take"><b>takeaway:</b> planning ahead, keeping accurate records and coordinating a team.</p>
+            <p class="take"><b>takeaway:</b> shipping a live site for thousands of real users as part of a team.</p>
           </li>
 
           <li class="ticket ticket-edu reveal">
             <p class="when">Education</p>
             <h3>Bachelor of Nursing Science (B.NSc.)</h3>
             <p class="org">University of Lagos · <time datetime="2026-08">Aug 2026</time></p>
-            <p class="org"><b>Registered Nurse</b>, Nursing and Midwifery Council of Nigeria (NMCN)</p>
+            <p class="org"><b>Registered Nurse</b>, Nursing and Midwifery Council of Nigeria (NMCN) · <time datetime="2026-06">Jun 2026</time> – present</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <p class="hand reveal">got a role or a project in mind?</p>

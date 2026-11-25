@@ -174,3 +174,39 @@ if (form && status) {
     }
   });
 }
+
+/* ==========================================================
+   9. COUNT-UP NUMBERS: count from 0 to the real figure when scrolled into view
+   ========================================================== */
+const counters = $$("[data-count]");
+const formatNumber = new Intl.NumberFormat("en-US");   // adds the thousands comma
+
+function countUp(el) {
+  const target = Number(el.dataset.count);
+  const suffix = el.dataset.suffix || "";
+  const duration = 1600;   // ms
+  const start = performance.now();
+
+  function frame(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);   // fast at first, gentle at the end
+    el.textContent = formatNumber.format(Math.round(target * eased)) + suffix;
+    if (progress < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+// The real figure is already written in the HTML, so with no JavaScript or reduced motion it just shows
+if (counters.length && !calm && "IntersectionObserver" in window) {
+  const counterObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        countUp(entry.target);
+        observer.unobserve(entry.target);   // count once
+      });
+    },
+    { threshold: 0.6 }
+  );
+  counters.forEach((el) => counterObserver.observe(el));
+}
